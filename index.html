@@ -1,260 +1,561 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0034)https://hotspotparking.vercel.app/ -->
+<html lang="en"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_mUj4Vc"></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=44eff0df-5c6d-4c9e-9282-bf2e6ff4abf9
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Monthly Pass</title>
+    <meta name="google-adsense-account" content="ca-pub-3666844750747814">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Google Fonts for Roboto Mono -->
+    <link href="css2" rel="stylesheet">
+<style>@keyframes slide-in-one-tap {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
 
-    <title>Student Monthly Pass - Demo</title>
+.trust-hide-gracefully {
+  opacity: 0;
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+.trust-wallet-one-tap .hidden {
+    display: none;
+  }
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+.trust-wallet-one-tap .semibold {
+    font-weight: 500;
+  }
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Fira Sans", sans-serif;
-            background-color: #36559E;
-            color: #222;
-        }
+.trust-wallet-one-tap .binance-plex {
+    font-family: 'Binance';
+  }
 
-        .header {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-        }
+.trust-wallet-one-tap .rounded-full {
+    border-radius: 50%;
+  }
 
-        .header img {
-            display: block;
-            width: 100%;
-            height: auto;
-            max-height: 180px;
-            object-fit: cover;
-        }
+.trust-wallet-one-tap .flex {
+    display: flex;
+  }
 
-        .container {
-            width: 90%;
-            max-width: 420px;
-            margin: 24px auto;
-            padding: 24px 20px;
-            background-color: #fff;
-            border-radius: 14px;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            position: relative;
-        }
+.trust-wallet-one-tap .flex-col {
+    flex-direction: column;
+  }
 
-        .demo-label {
-            display: inline-block;
-            margin-bottom: 12px;
-            padding: 6px 12px;
-            border: 1px solid #b7791f;
-            border-radius: 5px;
-            background: #fff7df;
-            color: #754c00;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
+.trust-wallet-one-tap .items-center {
+    align-items: center;
+  }
 
-        .title {
-            margin: 8px 0 18px;
-            font-size: 25px;
-            font-weight: 700;
-            color: #263b67;
-        }
+.trust-wallet-one-tap .space-between {
+    justify-content: space-between;
+  }
 
-        .date-time {
-            margin: 8px 0;
-            font-size: 16px;
-            color: #333;
-        }
+.trust-wallet-one-tap .justify-center {
+    justify-content: center;
+  }
 
-        .transit-name {
-            margin-top: 20px;
-            font-size: 21px;
-            font-weight: 700;
-            color: #263b67;
-        }
+.trust-wallet-one-tap .w-full {
+    width: 100%;
+  }
 
-        .bus-image {
-            display: block;
-            width: 100%;
-            max-width: 240px;
-            max-height: 130px;
-            object-fit: contain;
-            margin: 18px auto;
-        }
+.trust-wallet-one-tap .box {
+    transition: all 0.5s cubic-bezier(0, 0, 0, 1.43);
+    animation: slide-in-one-tap 0.5s cubic-bezier(0, 0, 0, 1.43);
+    width: 384px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1020;
+  }
 
-        .demo-notice {
-            margin: 16px 0;
-            padding: 10px;
-            border-radius: 8px;
-            background: #f1f4fa;
-            color: #344563;
-            font-size: 13px;
-            line-height: 1.5;
-        }
+.trust-wallet-one-tap .header {
+    gap: 15px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 18px;
+  }
 
-        .timer-heading {
-            margin-top: 18px;
-            font-weight: 600;
-        }
+.trust-wallet-one-tap .header .left-items {
+      gap: 15px;
+    }
 
-        #timer {
-            margin: 8px 0;
-            font-size: 25px;
-            font-weight: 700;
-            color: #263b67;
-            font-variant-numeric: tabular-nums;
-        }
+.trust-wallet-one-tap .header .title {
+      color: #1e2329;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
 
-        .button {
-            display: inline-block;
-            margin-top: 12px;
-            padding: 11px 22px;
-            border: none;
-            border-radius: 8px;
-            background-color: #36559E;
-            color: #fff;
-            font-family: inherit;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-        }
+.trust-wallet-one-tap .header .subtitle {
+      color: #474d57;
+      font-size: 14px;
+      line-height: 20px;
+    }
 
-        .button:hover {
-            background-color: #263f79;
-        }
+.trust-wallet-one-tap .header .close {
+      color: #1e2329;
+      cursor: pointer;
+    }
 
-        .footer {
-            width: 100%;
-            margin-top: 30px;
-            overflow: hidden;
-        }
+.trust-wallet-one-tap .body {
+    padding: 9px 18px;
+    gap: 10px;
+  }
 
-        .footer img {
-            display: block;
-            width: 100%;
-            height: auto;
-            max-height: 160px;
-            object-fit: cover;
-        }
+.trust-wallet-one-tap .body .right-items {
+      gap: 10px;
+      width: 100%;
+    }
 
-        @media (max-width: 480px) {
-            .container {
-                width: 92%;
-                padding: 20px 16px;
-            }
+.trust-wallet-one-tap .body .right-items .wallet-title {
+        color: #1e2329;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+      }
 
-            .title {
-                font-size: 22px;
-            }
-        }
-    </style>
-</head>
+.trust-wallet-one-tap .body .right-items .wallet-subtitle {
+        color: #474d57;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+.trust-wallet-one-tap .connect-indicator {
+    gap: 15px;
+    padding: 8px 0;
+  }
+
+.trust-wallet-one-tap .connect-indicator .flow-icon {
+      color: #474d57;
+    }
+
+.trust-wallet-one-tap .loading-color {
+    color: #fff;
+  }
+
+.trust-wallet-one-tap .button {
+    border-radius: 50px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    background-color: rgb(5, 0, 255);
+    border-color: rgb(229, 231, 235);
+    cursor: pointer;
+    text-align: center;
+    height: 45px;
+  }
+
+.trust-wallet-one-tap .button .button-text {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+.trust-wallet-one-tap .footer {
+    margin: 20px 30px;
+  }
+
+.trust-wallet-one-tap .check-icon {
+    color: #fff;
+  }
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Regular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Medium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-SemiBold.otf) format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+</style></head>
 
 <body>
-
-    <header class="header">
-        <img
-            src="https://hotspot-new.netlify.app/header.jpg"
-            alt="Page header"
-        >
+    <!-- Fixed Header -->
+    <header class="fixed-header">
+            <img src="header.jpg" alt="Header Image">
     </header>
 
-    <main class="container">
-        <span class="demo-label">DEMO — NOT VALID FOR TRAVEL</span>
-
-        <h1 class="title">Student Monthly Pass</h1>
-
-        <p class="date-time" id="date">Date: Loading...</p>
-        <p class="date-time" id="time">Time: Loading...</p>
-
-        <div class="transit-name">Transit Pass Preview</div>
-
-        <img
-            class="bus-image"
-            src="https://hotspot-new.netlify.app/my.gif"
-            alt="Animated bus graphic"
-        >
-
-        <div class="demo-notice">
-            This is a design preview only. It is not an official transit
-            ticket or proof of fare payment.
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="title">Student Monthly Pass</h2>
+        <p id="date" class="date-time">Wed Jun 04 2025</p>
+        <p id="time" class="date-time">02:59:20 PM</p>
+        <h3 class="transit-name">Barrie Transit</h3>
+        <div class="image-container">
+            <img src="my.gif" alt="Animated Bus GIF">
         </div>
+        <button class="expire-button">Expire</button>
+        <p class="expiry-info"><strong>This pass expires after 46 minutes</strong></p>
+        <p class="user-id">User ID 100484912</p>
+    </div>
 
-        <p class="timer-heading">Demo countdown</p>
-        <div id="timer">02:00</div>
+    <div>
+        <p class="center"><a href="https://myridebarrie.ca/RouteMap"><button class="expire-button">Live Map</button></a></p> 
+    </div>
 
-        <button class="button" id="resetButton" type="button">
-            Reset Demo Timer
-        </button>
-    </main>
+    
 
-    <footer class="footer">
-        <img
-            src="https://hotspot-new.netlify.app/footer.jpg"
-            alt="Page footer"
-        >
+    <!-- Fixed Footer -->
+    <footer class="fixed-footer">
+         <img src="footer.jpg" alt="Footer Image">
     </footer>
+    <script src="script.js.download"></script>
 
-    <script>
-        function updateDateTime() {
-            const now = new Date();
 
-            document.getElementById("date").textContent =
-                "Date: " + now.toLocaleDateString();
+</body></html>
+function updateDateTime() {
+    const now = new Date();
 
-            document.getElementById("time").textContent =
-                "Time: " + now.toLocaleTimeString();
-        }
+    const dateOptions = {
+        weekday: "short",
+        year: "numeric",
+        month: "short",
+        day: "2-digit",
+    };
 
-        let remainingSeconds = 120;
-        let timerInterval;
+    const timeOptions = {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: true,
+    };
 
-        function displayTimer() {
-            const minutes = Math.floor(remainingSeconds / 60);
-            const seconds = remainingSeconds % 60;
+    const dateString = now
+        .toLocaleDateString("en-US", dateOptions)
+        .replace(/, /g, " ");
+    const timeString = now.toLocaleTimeString("en-US", timeOptions);
 
-            document.getElementById("timer").textContent =
-                String(minutes).padStart(2, "0") + ":" +
-                String(seconds).padStart(2, "0");
-        }
+    document.getElementById("date").textContent = dateString;
+    document.getElementById("time").textContent = timeString;
+}
 
-        function startDemoTimer() {
-            clearInterval(timerInterval);
-            remainingSeconds = 120;
-            displayTimer();
+setInterval(updateDateTime, 1000); // Update the time every second
+updateDateTime(); // Initial call to set the time immediately
 
-            timerInterval = setInterval(function () {
-                if (remainingSeconds > 0) {
-                    remainingSeconds--;
-                    displayTimer();
-                } else {
-                    clearInterval(timerInterval);
-                    document.getElementById("timer").textContent =
-                        "DEMO ENDED";
-                }
-            }, 1000);
-        }
+// Function to generate a random number between min and max (inclusive)
+function getRandomExpiryTime(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-        updateDateTime();
-        setInterval(updateDateTime, 1000);
+// Set the random expiration time
+function setRandomExpiryTime() {
+    const expiryTime = getRandomExpiryTime(2, 50);
+    const expiryElement = document.querySelector(".expiry-info strong");
+    expiryElement.textContent = `This pass expires after ${expiryTime} minutes`;
+}
 
-        document.getElementById("resetButton").addEventListener(
-            "click",
-            startDemoTimer
-        );
+// Call the function to set the random expiration time on page load
+window.onload = setRandomExpiryTime;
 
-        startDemoTimer();
-    </script>
+// Function to generate a random number between min and max (inclusive)
+function getRandomExpiryTime(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-</body>
-</html>
+// Set the random expiration time
+function setRandomExpiryTime() {
+    const expiryTime = getRandomExpiryTime(2, 50);
+    const expiryElement = document.querySelector(".expiry-info strong");
+    expiryElement.textContent = `This pass expires after ${expiryTime} minutes`;
+}
+
+// Call the function to set the random expiration time on page load
+window.onload = setRandomExpiryTime; /* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhGq3-OXg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhPq3-OXg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhIq3-OXg.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhEq3-OXg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhFq3-OXg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhGq3-OXg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhPq3-OXg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhIq3-OXg.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhEq3-OXg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhFq3-OXg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhGq3-OXg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhPq3-OXg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhIq3-OXg.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhEq3-OXg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhFq3-OXg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: "Fira Sans", sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    /* Ensures content doesn't overlap with fixed header */
+    padding-bottom: 50px;
+    /* Ensures content doesn't overlap with fixed footer */
+}
+
+.fixed-header,
+.fixed-footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    /* Ensures the header and footer stay on top */
+}
+
+.fixed-header {
+    top: 0;
+}
+
+.fixed-footer {
+    bottom: 0;
+}
+
+.fixed-header img,
+.fixed-footer img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    background-color: #36559E;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    /* Medium weight */
+    font-family: "Fira Sans", sans-serif;
+}
+
+.date-time {
+    font-size: 31px;
+    margin: 0;
+    font-weight: 550;
+    margin-top: 18px;
+}
+
+.transit-name {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 3px;
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.expire-button {
+    font-family: "Fira Sans", sans-serif;
+    background-color: #e53935;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    /* Regular weight */
+    padding: 10px 35px;
+}
+
+.expire-button:hover {
+    background-color: #d32f2f;
+}
+
+.expiry-info {
+    font-size: 22px;
+    font-weight: 600;
+    /* Bold */
+    margin-bottom: 10px;
+}
+
+.user-id {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    /* Regular weight */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.center {
+    margin-top: 2px;
+    text-align: center;
+}
